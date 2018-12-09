@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> -->
+<title>Formular ServiceDesk</title>
+<script type="text/javascript" src="form.js"></script>
+<script type="text/javascript">
+window.onload=formularInitialsieren;
+</script>
+
+<!--  <style>
+ #k2 { visibility: hidden; }
+ </style>
+ <script language="Javascript">
+   function katdesigner() {	
+	document.forms.ticket.kat2.style.visibility = 'visible'; 
+	document.forms.ticket.kat1.style.color = 'orange';
+		
+} -->
+	
+   
+</head>
+
+<body>
+
+<h1>Ticketstellung</h1><br><br>
+
+<div>
+<form  action="mailto:cowboy@banst-pt.de" method="post" name="ticket" accept-charset="utf-8" enctype="text/plain">
+ 
+<div id="div_ik1">    
+   <b id="ues_ik1" >Kategorie 1</b><br>
+   <select id="ik1" name="inckat1" size="1" onchange="inc_designer()">
+   </select>
+</div>
+   
+<div id="div_ik2">   
+   <b id="ues_ik2" >Kategorie 2</b><br>
+   <select id="ik2" name="inckat2" size="1" onclick="katdesigner()">
+	</select>
+</div>	
+
+<div id="div_ik3">  
+   <b id="ues_ik3" >Kategorie 3</b><br>
+   <select id="ik3" name="inckat3" size="1" onclick="katdesigner()">
+	</select>
+</div>
+	
+	 <br><br><br><br><br>
+	 <p id="test"></p>
+	 <br>
+	 <h5>Erläuterung/Bemerkung</h5>
+	 <textarea id="bem" name="Bemerkung" rows="5" cols="30"></textarea><br><br>    
+	
+	<input type="submit" value="Absenden" />
+	</form>
+</div>
+>
+</body>
+
+</html>
+
+
